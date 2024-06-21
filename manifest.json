@@ -1,10 +1,16 @@
 {
     "manifest_version": 3,
-    "name": "Hello Extensions",
-    "description": "Base Level Extension",
+    "name": "Save BrowserTab",
     "version": "1.0",
+    "description": "Collect browser tabs and save them for later",
+    "permissions": [
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
     "action": {
-      "default_popup": "hello.html",
+      "default_popup": "popup.html",
       "default_icon": "/icon/OIG1.png"
     }
   }
