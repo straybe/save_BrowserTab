@@ -11,4 +11,13 @@ document.getElementById('collectLinks').addEventListener('click', () => {
             linksList.appendChild(listItem);
         });
     });
+
+    addButtonSaveLinks();
 });
+
+function addButtonSaveLinks() {
+    var newButton = document.createElement('button');
+    newButton.innerHTML = 'Guardar';
+    newButton.setAttribute('id', 'saveLinks');
+    document.body.appendChild(newButton);
+}
